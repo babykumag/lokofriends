@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/lokofriends/static/css/main.b6e15717.css",
+    "main.js": "/lokofriends/static/js/main.fe54c249.js",
+    "static/js/787.2409f75c.chunk.js": "/lokofriends/static/js/787.2409f75c.chunk.js",
+    "index.html": "/lokofriends/index.html",
+    "main.b6e15717.css.map": "/lokofriends/static/css/main.b6e15717.css.map",
+    "main.fe54c249.js.map": "/lokofriends/static/js/main.fe54c249.js.map",
+    "787.2409f75c.chunk.js.map": "/lokofriends/static/js/787.2409f75c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b6e15717.css",
+    "static/js/main.fe54c249.js"
+  ]
+}
