@@ -15,9 +15,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-    fetch('https://jsonplaceholder.typicode.com/users').
-        then(response=>{return response.json();}).
-        then(users =>{this.setState({lokofriends:users})});
+    fetch('https://jsonplaceholder.typicode.com/users').then(response=>{return response.json();}).then(users =>{this.setState({lokofriends:users})});
     
   }
 
@@ -26,9 +24,14 @@ onSearchChange = (event) => {
 }
 
   render() {
-    const filteredFriends = this.state.lokofriends.filter(lokofriends =>{
-      return lokofriends.name.toLowerCase().includes(this.state.searchfield.toLowerCase());
+    const { lokofriends , searchfield} = this.state;
+    const filteredFriends = lokofriends.filter(friends =>{
+      return friends.name.toLowerCase().includes(searchfield.toLowerCase());
     })
+    
+    if (lokofriends.length === 0){
+      return <h1>Loading...Please Wait...</h1>
+    } else {
 
     return (
       <div className="tc">
@@ -39,6 +42,7 @@ onSearchChange = (event) => {
         </Scroll>
       </div>
     );
+  }
   }
  
 }
